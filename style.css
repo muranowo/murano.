@@ -1,0 +1,93 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #E9EBFB; /* Light purple-grey background */
+    font-family: 'VT323', monospace;
+    color: #000;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: #fff;
+    border-bottom: 1px solid #000;
+}
+
+.logo-img {
+    height: 30px; /* Adjust based on your PNG size */
+    image-rendering: pixelated;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 24px;
+    margin-left: 30px;
+    letter-spacing: 1px;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #fff;
+    padding: 30px 0;
+    border-bottom: 1px solid #000;
+    text-align: center;
+}
+
+.hero-container {
+    font-size: 110px;
+    line-height: 0.8;
+}
+
+.text-black { color: #000; }
+.text-blue { color: #8E9BFF; margin-left: 20px; }
+.dot { color: #000; }
+
+/* Main Content */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+}
+
+.image-wrapper {
+    width: 100%;
+    max-width: 800px;
+    margin-bottom: 40px;
+}
+
+.main-image {
+    width: 100%;
+    display: block;
+    /* Keeps halftone dots crisp */
+    image-rendering: auto; 
+}
+
+/* Bio Text */
+.bio {
+    max-width: 550px;
+    text-align: center;
+}
+
+.bio p {
+    font-size: 26px;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    word-spacing: 2px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero-container { font-size: 60px; }
+    .nav-links a { font-size: 18px; margin-left: 15px; }
+    .bio p { font-size: 20px; }
+}
