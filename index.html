@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nikhil Maharjan — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" type="image/svg+xml" href="logo.svg">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="#" class="nav-mark">
+      <svg width="16" height="16" viewBox="0 0 16 16">
+        <rect x="0" y="0" width="7" height="7" fill="#2b4cff"/>
+        <rect x="9" y="0" width="7" height="7" fill="#f2f2ee"/>
+        <rect x="0" y="9" width="7" height="7" fill="#f2f2ee"/>
+        <rect x="9" y="9" width="7" height="7" fill="#ff5c39"/>
+      </svg>
+      Nikhil Maharjan
+    </a>
+    <ul class="nav-links">
+      <li><a href="#works">Works</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero" id="hero">
+    <canvas id="scene" class="scene-canvas" aria-hidden="true"></canvas>
+    <div class="hero-ui">
+      <p class="eyebrow">Product Designer &amp; Developer</p>
+      <p class="formation-label" id="formationLabel">01 — Nikhil Maharjan</p>
+      <span class="hint">click anywhere · particles reshape on their own too</span>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="section-head">
+      <h2>About</h2>
+      <p class="eyebrow">Who's building this</p>
+    </div>
+    <div class="about-wrap">
+      <div class="about-bio">
+        <p>I'm Nikhil — a product designer and developer who likes interfaces with a bit of logic underneath them.</p>
+        <p>Most of my work sits between design and engineering: I sketch the interaction, then build it myself, which usually means the two stay honest with each other. The particles above aren't decoration for its own sake — they're the same golden-angle spiral you'd find in a sunflower head, a Lissajous curve you'd see on an oscilloscope, and a sine field, all driven by the same small set of physics rules. I like that kind of thing: a simple equation that produces something worth looking at.</p>
+        <p>Based in Kathmandu, working with teams anywhere.</p>
+      </div>
+      <div class="about-skills">
+        <div>
+          <h3>Design</h3>
+          <div class="chip-row">
+            <span class="chip">Product design</span>
+            <span class="chip">Design systems</span>
+            <span class="chip">Motion &amp; interaction</span>
+            <span class="chip">Figma</span>
+          </div>
+        </div>
+        <div>
+          <h3>Engineering</h3>
+          <div class="chip-row">
+            <span class="chip">TypeScript</span>
+            <span class="chip">React</span>
+            <span class="chip">Node.js</span>
+            <span class="chip">Canvas / WebGL</span>
+          </div>
+        </div>
+        <div>
+          <h3>Other</h3>
+          <div class="chip-row">
+            <span class="chip">Generative art</span>
+            <span class="chip">Data visualization</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="approach">
+    <div class="section-head">
+      <h2>Approach</h2>
+      <p class="eyebrow">How a project runs</p>
+    </div>
+    <div class="approach-grid">
+      <article class="approach-card">
+        <span class="approach-num">01</span>
+        <h3>Discover</h3>
+        <p>Understand the actual problem, the constraints, and who the interface is really for, before touching a design tool.</p>
+      </article>
+      <article class="approach-card">
+        <span class="approach-num">02</span>
+        <h3>Design</h3>
+        <p>Explore structure and flow first, visual language second — wireframes and prototypes people can actually click through.</p>
+      </article>
+      <article class="approach-card">
+        <span class="approach-num">03</span>
+        <h3>Build</h3>
+        <p>Ship the real thing, not a static comp. Building it myself keeps the design honest about what's actually possible.</p>
+      </article>
+      <article class="approach-card">
+        <span class="approach-num">04</span>
+        <h3>Refine</h3>
+        <p>Watch how it's actually used, then tighten the rough edges. The first version is a draft, not the destination.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="works">
+    <div class="section-head">
+      <h2>Selected works</h2>
+      <p class="eyebrow">2023 — 2026</p>
+    </div>
+    <div class="works-grid">
+      <article class="work">
+        <div class="work-mark"></div>
+        <h3>Fieldnote</h3>
+        <p>A note-taking app for researchers, built around structured tags instead of folders.</p>
+        <div class="tag-row"><span class="tag">Product</span><span class="tag">React</span><span class="tag">Figma</span></div>
+        <div class="work-meta"><span>Product design</span><span>2026</span></div>
+      </article>
+      <article class="work">
+        <div class="work-mark"></div>
+        <h3>Kiln</h3>
+        <p>A small-batch ceramics studio's storefront and booking system for classes.</p>
+        <div class="tag-row"><span class="tag">Web</span><span class="tag">Brand</span><span class="tag">Node</span></div>
+        <div class="work-meta"><span>Web &amp; brand</span><span>2025</span></div>
+      </article>
+      <article class="work">
+        <div class="work-mark"></div>
+        <h3>Loop Transit</h3>
+        <p>Real-time bus tracking dashboard for a mid-size city transit authority.</p>
+        <div class="tag-row"><span class="tag">Data viz</span><span class="tag">D3</span><span class="tag">TypeScript</span></div>
+        <div class="work-meta"><span>Data viz</span><span>2025</span></div>
+      </article>
+      <article class="work">
+        <div class="work-mark"></div>
+        <h3>Paper Trail</h3>
+        <p>An editorial archive and reading tool for an independent print magazine.</p>
+        <div class="tag-row"><span class="tag">Front-end</span><span class="tag">CMS</span></div>
+        <div class="work-meta"><span>Front-end</span><span>2024</span></div>
+      </article>
+      <article class="work">
+        <div class="work-mark"></div>
+        <h3>Aperture</h3>
+        <p>Portfolio generator for photographers, exporting fully static galleries.</p>
+        <div class="tag-row"><span class="tag">Tooling</span><span class="tag">CLI</span></div>
+        <div class="work-meta"><span>Tooling</span><span>2024</span></div>
+      </article>
+      <article class="work">
+        <div class="work-mark"></div>
+        <h3>Groundwork</h3>
+        <p>Onboarding flow redesign for a construction-scheduling B2B tool.</p>
+        <div class="tag-row"><span class="tag">UX</span><span class="tag">Research</span></div>
+        <div class="work-meta"><span>UX</span><span>2023</span></div>
+      </article>
+    </div>
+    <a class="view-all" href="gallery.html">
+      <span>See every design &rarr;</span>
+      <span class="view-all-badge">12+</span>
+    </a>
+  </section>
+
+  <section id="collages">
+    <div class="section-head">
+      <h2>Collages</h2>
+      <p class="eyebrow">Personal, unbriefed</p>
+    </div>
+    <p class="collage-teaser-text">The looser stuff I make for no client and no brief — 100 of them, laid out ten rows deep. A preview:</p>
+    <div class="collage-teaser">
+      <img src="images/collage-008.png" alt="Collage preview" loading="lazy">
+      <img src="images/collage-010.png" alt="Collage preview" loading="lazy">
+      <img src="images/collage-035.png" alt="Collage preview" loading="lazy">
+      <img src="images/collage-037.png" alt="Collage preview" loading="lazy">
+    </div>
+    <a class="view-all" href="collages.html">
+      <span>Open the full set &rarr;</span>
+      <span class="view-all-badge">100</span>
+    </a>
+  </section>
+
+  <section id="contact">
+    <div class="section-head">
+      <h2>Get in touch</h2>
+      <p class="eyebrow">Open to work</p>
+    </div>
+    <div class="contact-wrap">
+      <div>
+        <a class="contact-email" href="mailto:hello@nikhilmaharjan.com">hello@nikhilmaharjan.com</a>
+        <p class="contact-note">Currently taking on a small number of freelance and contract projects. Reply within a couple of days.</p>
+      </div>
+      <ul class="contact-list">
+        <li><a href="#">LinkedIn</a></li>
+        <li><a href="#">GitHub</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2026 Nikhil Maharjan</span>
+    <span>Kathmandu, NP</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

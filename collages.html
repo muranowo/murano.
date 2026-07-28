@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Collages — Nikhil Maharjan</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="collages.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-mark">
+      <svg width="16" height="16" viewBox="0 0 16 16">
+        <rect x="0" y="0" width="7" height="7" fill="#2b4cff"/>
+        <rect x="9" y="0" width="7" height="7" fill="#f2f2ee"/>
+        <rect x="0" y="9" width="7" height="7" fill="#f2f2ee"/>
+        <rect x="9" y="9" width="7" height="7" fill="#ff5c39"/>
+      </svg>
+      Nikhil Maharjan
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html#collages">&larr; Back</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="collage-header">
+    <p class="eyebrow">Personal work</p>
+    <h1>Collages,<br><em>100 of them.</em></h1>
+    <p class="collage-sub">Loose, unbriefed, made for their own sake. Laid out ten rows deep, alternating eleven and nine across — because a perfectly even grid felt wrong for this one. Every tile here is a placeholder PNG (<code>images/collage-001.png</code> … <code>collage-100.png</code>) ready to be swapped for the real thing.</p>
+  </header>
+
+  <main class="collage-wrap">
+    <div class="collage-row" data-row="1"></div>
+    <div class="collage-row" data-row="2"></div>
+    <div class="collage-row" data-row="3"></div>
+    <div class="collage-row" data-row="4"></div>
+    <div class="collage-row" data-row="5"></div>
+    <div class="collage-row" data-row="6"></div>
+    <div class="collage-row" data-row="7"></div>
+    <div class="collage-row" data-row="8"></div>
+    <div class="collage-row" data-row="9"></div>
+    <div class="collage-row" data-row="10"></div>
+  </main>
+
+  <div class="collage-overlay" id="collageOverlay">
+    <button class="collage-modal-close" id="collageClose" aria-label="Close">&times;</button>
+    <button class="collage-modal-arrow collage-modal-prev" id="collagePrev" aria-label="Previous">&larr;</button>
+    <button class="collage-modal-arrow collage-modal-next" id="collageNext" aria-label="Next">&rarr;</button>
+    <span class="collage-modal-count" id="collageCount">01 / 42</span>
+  </div>
+  <img class="collage-modal-img" id="collageModalImg" alt="">
+
+  <footer>
+    <span>© 2026 Nikhil Maharjan</span>
+    <span>Kathmandu, NP</span>
+  </footer>
+
+  <script src="collages.js"></script>
+</body>
+</html>
